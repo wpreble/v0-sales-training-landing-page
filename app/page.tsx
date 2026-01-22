@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Check, ArrowRight, Zap, Target, Clock, Brain } from "lucide-react"
+import { Check, ArrowRight, Zap, Target, Brain, Users } from "lucide-react"
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
             />
             <div>
               <span className="font-bold text-lg text-foreground">Tiger Quest</span>
-              <p className="text-xs text-muted-foreground">Powered by Big Marv</p>
+              <p className="text-xs text-muted-foreground">AI Sales Training for Wellness Clinics</p>
             </div>
           </div>
           <Button
@@ -32,38 +32,32 @@ export default function Home() {
       <section className="pt-32 pb-20 px-6 relative overflow-hidden bg-background">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <div className="inline-block px-4 py-2 mb-8 rounded-full bg-primary/10 border border-primary/20">
-            <span className="text-sm font-semibold text-primary">Powered by Big Marv</span>
-          </div>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance leading-tight text-foreground">
-            Close Every Qualified Sale. <span className="text-primary">Period.</span>
+            Turn Every Consultation Into a <span className="text-primary">Closed Deal.</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-6 max-w-3xl mx-auto text-balance">
-            The systematic sales approach that turned hundreds into millionaires — now available 24/7 as your AI-powered
-            digital sales coach.
+            The AI-powered sales training platform that transforms your front desk staff and patient coordinators into confident closers.
           </p>
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Big Marv spent decades perfecting the Tiger Quest system — a proven methodology for human influence that has
-            created retired millionaires, transformed struggling salespeople into closers, and built empires. Now, his
-            entire life's work lives on as a digital twin you can access anytime, anywhere.
+            Stop losing high-value consultations to untrained staff. Tiger Quest gives your team 24/7 access to proven sales frameworks, role-play practice, and real-time coaching — specifically designed for aesthetic and wellness services.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg">
-              Become a Legacy Member — $300/month
+              Try Now
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="border-foreground/30 text-foreground hover:bg-foreground/10 px-8 py-6 text-lg bg-transparent"
             >
-              Join the Wait List
+              Book a Call
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </div>
 
-          <p className="text-sm text-primary font-medium mb-12">Limited to 20 Legacy Members</p>
+          <p className="text-sm text-muted-foreground mb-12">See results in your first week.</p>
 
           {/* App Screenshot Section */}
           <div className="relative max-w-5xl mx-auto">
@@ -71,7 +65,7 @@ export default function Home() {
             <div className="relative rounded-xl overflow-hidden border border-border shadow-2xl">
               <img
                 src="/images/image.png"
-                alt="Tiger Quest AI Sales Coach interface showing chat with Big Marv, Resource Library, and Sales Vault"
+                alt="Tiger Quest AI Sales Coach interface showing training modules, role-play scenarios, and sales frameworks"
                 className="w-full h-auto"
               />
             </div>
@@ -83,24 +77,23 @@ export default function Home() {
       <section className="py-20 px-6 bg-secondary text-secondary-foreground">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center text-secondary-foreground">
-            Raw Talent Only Gets You <span className="text-primary">So Far</span>
+            Your Consultations Are <span className="text-primary">Leaking Revenue</span>
           </h2>
 
           <Card className="bg-secondary-foreground/5 border border-secondary-foreground/10 p-8 mb-12">
             <p className="text-xl italic text-secondary-foreground/80 border-l-4 border-primary pl-6">
-              "Most entrepreneurs are naturally born salespeople. They grew to a million on grit and talent alone. But
-              raw influence without a system hits a ceiling — and when you try to scale by hiring people who aren't
-              naturally gifted, everything breaks."
+              "You spend thousands on marketing to get patients through the door. But when your front desk can't close, 
+              every missed consultation is $3,000-$15,000 walking out the door. The math is brutal."
             </p>
           </Card>
 
           <div className="space-y-4">
             {[
-              "You got here on talent, but your team can't replicate what you do",
-              "Training sessions feel good in the moment but nothing sticks",
-              "Your close ratio is inconsistent — sometimes 70%, sometimes 30%",
-              "You've tried \"sales training\" but it felt sleazy or didn't match your style",
-              "New hires take months to ramp up (if they ever do)",
+              "Patient coordinators give quotes but don't know how to close",
+              "High-value treatments get 'I need to think about it' responses",
+              "Staff feels uncomfortable discussing pricing and financing",
+              "Consultations run long but still don't convert",
+              "New hires take 6+ months before they can sell confidently",
             ].map((item, i) => (
               <div key={i} className="flex gap-4 text-secondary-foreground/70 text-lg">
                 <span className="text-red-400 font-bold">✗</span>
@@ -115,45 +108,20 @@ export default function Home() {
       <section className="py-20 px-6 bg-background">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center text-foreground">
-            A System That Works For <span className="text-primary">Anyone</span>
+            Train Your Team to Close <span className="text-primary">Like You Do</span>
           </h2>
 
-          <div className="text-lg text-muted-foreground space-y-6 mb-16 text-center max-w-3xl mx-auto">
+          <div className="text-lg text-muted-foreground space-y-6 text-center max-w-3xl mx-auto">
             <p>
-              Big Marv wasn't a natural born salesperson. He had to create a system to become great. That's what makes
-              Tiger Quest different — it takes someone with zero natural sales ability and transforms them into a
-              phenomenal closer.
+              Tiger Quest isn't generic sales training. It's built specifically for wellness clinics — from Botox consultations 
+              to body contouring packages. Your team learns to handle real objections like "I need to check with my spouse" 
+              or "That's more than I expected."
             </p>
             <p className="text-xl font-semibold text-foreground">
-              If you follow the MANTOR qualification framework and execute the three phases, you will close every
-              qualified sale. Not 70%. Not 80%. <span className="text-primary">Every. Single. One.</span>
+              Watch your close rate jump from 30% to 70%+. 
+              <span className="text-primary"> In the first month.</span>
             </p>
           </div>
-
-          {/* MANTOR Framework */}
-          <Card className="bg-card border-2 border-primary/30 p-8">
-            <h3 className="text-2xl font-bold mb-8 text-center text-primary">The MANTOR Framework</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                { letter: "M", word: "Money", desc: "They have budget" },
-                { letter: "A", word: "Authority", desc: "You're talking to the decision maker" },
-                { letter: "N", word: "Need", desc: "There's a real problem to solve" },
-                { letter: "T", word: "Time frame", desc: "They're ready to buy now" },
-                { letter: "O", word: "Obstacle", desc: "You know what's in the way" },
-                { letter: "R", word: "Revenue", desc: "Profitable for your business" },
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-primary text-primary-foreground rounded-lg flex items-center justify-center font-bold text-xl flex-shrink-0">
-                    {item.letter}
-                  </div>
-                  <div>
-                    <p className="font-bold text-foreground">{item.word}</p>
-                    <p className="text-sm text-muted-foreground">{item.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </Card>
         </div>
       </section>
 
@@ -161,37 +129,37 @@ export default function Home() {
       <section className="py-20 px-6 bg-secondary text-secondary-foreground">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center text-secondary-foreground">
-            Big Marv <span className="text-primary">In Your Pocket</span>
+            Everything Your Team Needs to <span className="text-primary">Close More</span>
           </h2>
           <p className="text-xl text-secondary-foreground/70 text-center mb-16">
-            Everything you need to master the system
+            AI-powered training built for the wellness industry
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
                 icon: Brain,
-                title: "24/7 Access to the System",
+                title: "AI Role-Play Scenarios",
                 description:
-                  "The entire Tiger Quest methodology — every technique, every framework, every nuance — available anytime you need it. Ask questions, get coaching, drill the system until it becomes muscle memory.",
+                  "Practice real consultations with AI patients. Handle objections about pricing, timing, and competing treatments. Your team builds confidence before they're in front of real patients.",
               },
               {
                 icon: Zap,
-                title: "Trial Closing Mastery",
+                title: "Treatment-Specific Scripts",
                 description:
-                  "Nobody trial closes. It's the easiest skill to learn and moves the needle fastest. Master this one technique and watch your close ratio jump from 30% to 70% in the first week.",
+                  "From Botox to body contouring, from facials to weight loss programs. Get proven scripts tailored to each service you offer, with objection handling built in.",
               },
               {
-                icon: Clock,
-                title: "90-Day Mastery Path",
+                icon: Users,
+                title: "Team Progress Dashboard",
                 description:
-                  "The complete system takes 90 days to master. Not years of trial and error. Not thousands in courses that collect dust. A structured path that transforms how you influence others permanently.",
+                  "Track which team members are completing training, monitor their role-play scores, and identify who needs extra coaching. Know exactly who's ready to close.",
               },
               {
                 icon: Target,
-                title: "Role Play Intelligence",
+                title: "Real-Time Consultation Coaching",
                 description:
-                  "This isn't theory. It's drilling. AI-powered scenarios that force you to practice objection handling, rapport building, and closing techniques until they're second nature.",
+                  "Your team can ask Tiger Quest for help between appointments. 'Patient is hesitant about price' gets instant, actionable responses they can use immediately.",
               },
             ].map((feature, i) => (
               <Card
@@ -207,30 +175,40 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Legacy Section - Light */}
+      {/* Why Wellness Clinics Section - Light */}
       <section className="py-20 px-6 bg-background">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center text-foreground">
-            Powered by <span className="text-primary">Big Marv</span>
+            Built Specifically for <span className="text-primary">Wellness Clinics</span>
           </h2>
 
-          <div className="text-lg text-muted-foreground space-y-6 mt-12">
-            <p>
-              Big Marv spent his life perfecting the art of human influence. He trained thousands — from struggling
-              entrepreneurs to elite sales teams at the highest levels. When Tony Robbins needed someone to speak at
-              Business Mastery events, he called Marv.
-            </p>
-            <p>
-              His students didn't just learn to sell. They became millionaires. They retired early. They built empires.
-              And they all say the same thing:{" "}
-              <span className="text-accent font-semibold">
-                "Before I met Marv, I was dead broke. Now I don't have to work another day in my life."
-              </span>
-            </p>
-            <p>
-              This AI captures everything — every lesson, every story, every piece of wisdom from decades of real-world
-              results. It's not a course. It's a digital version of the greatest sales trainer who ever lived.
-            </p>
+          <div className="grid md:grid-cols-3 gap-8 mt-12">
+            {[
+              {
+                title: "Med Spas",
+                items: ["Botox & fillers", "Laser treatments", "Membership packages", "Treatment bundles"],
+              },
+              {
+                title: "Aesthetic Clinics",
+                items: ["Body contouring", "Skin rejuvenation", "Hair restoration", "Cosmetic procedures"],
+              },
+              {
+                title: "Wellness Centers",
+                items: ["Weight loss programs", "IV therapy", "Hormone optimization", "Functional medicine"],
+              },
+            ].map((category, i) => (
+              <Card key={i} className="p-6 bg-card border border-border">
+                <h3 className="font-bold text-xl mb-4 text-primary">{category.title}</h3>
+                <ul className="space-y-2">
+                  {category.items.map((item, j) => (
+                    <li key={j} className="flex gap-2 text-muted-foreground">
+                      <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -239,121 +217,165 @@ export default function Home() {
       <section className="py-20 px-6 bg-secondary text-secondary-foreground">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center text-secondary-foreground">
-            Results That <span className="text-primary">Speak</span>
+            Results From Clinics <span className="text-primary">Like Yours</span>
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {[
               {
-                name: "Chris Patterson",
+                name: "Sarah M.",
+                role: "Med Spa Owner, Austin",
                 quote:
-                  "The only reason I have success today is because of Big Marv. I followed the system. Before him, I was making $300 a month. Now I'm retired and my businesses do multiple seven figures.",
+                  "Our consultation close rate went from 35% to 72% in 6 weeks. That's an extra $47K per month in booked treatments.",
               },
               {
-                name: "Chris Luzar",
+                name: "Dr. James R.",
+                role: "Aesthetic Clinic, Miami",
                 quote:
-                  "Mastered the system, now teaches it to thousands. Built a career on the foundation of Tiger Quest.",
+                  "New patient coordinators used to take 4-5 months to get comfortable. Now they're closing within their first month.",
               },
               {
-                name: "David Pickett",
+                name: "Michelle T.",
+                role: "Wellness Center, LA",
                 quote:
-                  "From struggling salesperson to retired millionaire. \"I don't have to work another day if I don't want to.\"",
+                  "We finally have a consistent process. Every team member follows the same framework, and our reviews mention how 'professional' our consultations are.",
               },
             ].map((testimonial, i) => (
               <Card key={i} className="p-6 border border-secondary-foreground/10 bg-secondary-foreground/5">
                 <p className="text-secondary-foreground/80 mb-4 italic">"{testimonial.quote}"</p>
                 <p className="font-bold text-primary">{testimonial.name}</p>
+                <p className="text-sm text-secondary-foreground/60">{testimonial.role}</p>
               </Card>
             ))}
           </div>
-
-          {/* Brad's Story */}
-          <Card className="p-8 border-2 border-accent/30 bg-accent/10">
-            <p className="text-lg text-secondary-foreground/90 italic mb-4">
-              "I've completely rebuilt my life four, maybe five times. Each time it looked like there was no escape, no
-              return. Anyone watching would've said 'this guy's screwed.' But every single time, I came back. Not
-              because of luck. Because I mastered the ability of human influence through my dad's system. With this,
-              you're richer and more powerful than anyone — because you can get anything you want through ethical
-              influence."
-            </p>
-            <p className="font-bold text-accent">— Brad Himel, son of Big Marv</p>
-          </Card>
         </div>
       </section>
 
       {/* Pricing Section - Light */}
       <section className="py-20 px-6 bg-background">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center text-foreground">
-            Become a <span className="text-primary">Legacy Member</span>
+            Simple, <span className="text-primary">Team-Based Pricing</span>
           </h2>
           <p className="text-xl text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
-            We're opening Tiger Quest to just 20 Legacy Members — people who want to be part of something bigger than a
-            product launch.
+            One closed consultation pays for months of training.
           </p>
 
-          <Card className="p-10 border-2 border-primary bg-card text-center">
-            <div className="inline-block px-4 py-2 bg-primary/10 text-primary text-sm font-semibold rounded-full mb-6">
-              Limited to 20 Legacy Members
-            </div>
-            <div className="mb-8">
-              <span className="text-6xl font-bold text-foreground">$300</span>
-              <span className="text-xl text-muted-foreground">/month</span>
-            </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Starter */}
+            <Card className="p-8 border border-border bg-card">
+              <h3 className="text-xl font-bold mb-2 text-foreground">Starter</h3>
+              <p className="text-muted-foreground mb-6">For single locations</p>
+              <div className="mb-6">
+                <span className="text-4xl font-bold text-foreground">$197</span>
+                <span className="text-muted-foreground">/month</span>
+              </div>
+              <ul className="space-y-3 mb-8">
+                {["Up to 3 team members", "AI role-play scenarios", "Treatment-specific scripts", "Basic analytics"].map(
+                  (item, i) => (
+                    <li key={i} className="flex gap-2 text-muted-foreground">
+                      <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  )
+                )}
+              </ul>
+              <Button
+                variant="outline"
+                className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
+              >
+                Try Now
+              </Button>
+            </Card>
 
-            <ul className="space-y-4 mb-10 text-left max-w-md mx-auto">
-              {[
-                "Full access to the Tiger Quest AI system",
-                "90-day mastery path (the Three Phases of E)",
-                "Trial Close Challenge to get results in your first week",
-                "Direct influence on the product as we refine it",
-                "Legacy Member status — forever",
-                "$99/seat pricing for your team (after launch: $147/seat)",
-              ].map((benefit, i) => (
-                <li key={i} className="flex gap-3 text-muted-foreground">
-                  <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>{benefit}</span>
-                </li>
-              ))}
-            </ul>
+            {/* Growth - Featured */}
+            <Card className="p-8 border-2 border-primary bg-card relative">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-primary-foreground text-sm font-semibold rounded-full">
+                Most Popular
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-foreground">Growth</h3>
+              <p className="text-muted-foreground mb-6">For growing practices</p>
+              <div className="mb-6">
+                <span className="text-4xl font-bold text-foreground">$397</span>
+                <span className="text-muted-foreground">/month</span>
+              </div>
+              <ul className="space-y-3 mb-8">
+                {[
+                  "Up to 10 team members",
+                  "Everything in Starter",
+                  "Team progress dashboard",
+                  "Conversion analytics",
+                  "Priority support",
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-2 text-muted-foreground">
+                    <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">Try Now</Button>
+            </Card>
 
-            <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-6 text-lg">
-              Claim Your Legacy Spot
-            </Button>
-
-            <p className="text-sm text-muted-foreground mt-6">
-              We want commitment, not curiosity. If you master this, you'll make it back on your first deal.
-            </p>
-          </Card>
+            {/* Enterprise */}
+            <Card className="p-8 border border-border bg-card">
+              <h3 className="text-xl font-bold mb-2 text-foreground">Enterprise</h3>
+              <p className="text-muted-foreground mb-6">For multi-location groups</p>
+              <div className="mb-6">
+                <span className="text-4xl font-bold text-foreground">Custom</span>
+              </div>
+              <ul className="space-y-3 mb-8">
+                {[
+                  "Unlimited team members",
+                  "Everything in Growth",
+                  "Multi-location dashboard",
+                  "Custom integrations",
+                  "Dedicated success manager",
+                ].map((item, i) => (
+                  <li key={i} className="flex gap-2 text-muted-foreground">
+                    <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <Button
+                variant="outline"
+                className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
+              >
+                Book a Call
+              </Button>
+            </Card>
+          </div>
         </div>
       </section>
 
       {/* FAQ Section - Dark */}
       <section className="py-20 px-6 bg-secondary text-secondary-foreground">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center text-secondary-foreground">Questions</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center text-secondary-foreground">
+            Frequently Asked <span className="text-primary">Questions</span>
+          </h2>
 
           <div className="space-y-8">
             {[
               {
-                q: "What exactly is Tiger Quest AI?",
-                a: "It's a digital version of Big Marv's complete sales system — the methodology that created millionaires. Think of it as having the world's greatest sales trainer available 24/7 to coach you, drill you, and answer any question about human influence and closing.",
+                q: "How is this different from traditional sales training?",
+                a: "Traditional training is a one-time event that fades within weeks. Tiger Quest provides ongoing, on-demand practice with AI role-play scenarios. Your team can drill consultations anytime, get instant feedback, and build real muscle memory for handling objections.",
               },
               {
-                q: "How is this different from other sales training?",
-                a: "Most sales training teaches theory. This is a system. If you follow it, you close. Period. It's also not sleazy manipulation — it's ethical influence based on decades of real-world results. Plus, you're not watching videos and hoping it sticks. You're drilling with AI until it's muscle memory.",
+                q: "Will this work for my specific treatments?",
+                a: "Yes. We've built scenarios for everything from Botox and fillers to weight loss programs and IV therapy. The AI understands wellness industry terminology and common patient concerns. You can also customize scenarios for your unique service offerings.",
               },
               {
-                q: "What if I'm not a natural salesperson?",
-                a: "Perfect. Big Marv wasn't either. He created this system specifically for people who aren't naturally gifted. The worst salespeople often become the best students because they actually follow the system instead of relying on raw talent.",
+                q: "How long until we see results?",
+                a: "Most clinics see measurable improvement in close rates within the first 2-3 weeks. The structured 30-day onboarding ensures your team has the fundamentals down quickly, with ongoing improvement from there.",
               },
               {
-                q: "How long until I see results?",
-                a: "The trial closing technique alone can transform your close ratio in the first week. Full mastery takes 90 days, but you'll see improvements immediately if you actually practice.",
+                q: "What if my team isn't 'salesy'?",
+                a: "That's actually ideal. Tiger Quest teaches consultative selling — helping patients make confident decisions about their care, not pushy tactics. Your empathetic team members often become the best closers because patients trust them.",
               },
               {
-                q: "What does 'Legacy Member' mean?",
-                a: "You're not just a beta user. You're part of honoring Big Marv's life work. Many of our first members knew him personally — they're doing this to be part of keeping his legacy alive. Your feedback helps us make sure this captures his teaching perfectly.",
+                q: "Can we track individual team member progress?",
+                a: "Absolutely. The dashboard shows completion rates, role-play scores, and areas where each person needs more practice. Managers can identify who needs coaching without sitting in on every consultation.",
               },
             ].map((faq, i) => (
               <Card key={i} className="p-6 border border-secondary-foreground/10 bg-secondary-foreground/5">
@@ -369,21 +391,25 @@ export default function Home() {
       <section className="py-24 px-6 bg-gradient-to-b from-background to-muted border-t border-border">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance text-foreground">
-            Master the System. <span className="text-primary">Get Anything You Want.</span>
+            Stop Losing Consultations. <span className="text-primary">Start Closing.</span>
           </h2>
-          <p className="text-lg text-muted-foreground mb-4 italic max-w-2xl mx-auto">
-            "If you can master this system, you can literally be down on your luck with nothing to your name, and you're
-            still richer than anyone. Because you have the ability to influence. There is no greater quality and there
-            is no better system than this."
+          <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
+            Every week you wait is money walking out the door. Get started today and see the difference in your first week.
           </p>
-          <p className="text-primary font-semibold mb-10">— Brad Himel, son of Big Marv</p>
 
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-6 text-lg">
-            Become a Legacy Member
-          </Button>
-          <p className="text-sm text-muted-foreground mt-4">
-            Only 20 spots available. Once full, Legacy pricing closes permanently.
-          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-6 text-lg">
+              Try Now
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-foreground/30 text-foreground hover:bg-foreground/10 px-10 py-6 text-lg bg-transparent"
+            >
+              Book a Call
+            </Button>
+          </div>
+          <p className="text-sm text-muted-foreground mt-4">Setup takes 5 minutes.</p>
         </div>
       </section>
 
@@ -398,9 +424,8 @@ export default function Home() {
             />
             <span className="font-bold text-foreground">Tiger Quest</span>
           </div>
-          <p className="text-sm text-muted-foreground mb-2">Powered by Big Marv</p>
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Tiger Quest. Carrying the legacy forward.
+            © {new Date().getFullYear()} Tiger Quest. All rights reserved.
           </p>
         </div>
       </footer>
